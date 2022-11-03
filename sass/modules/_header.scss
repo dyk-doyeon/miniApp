@@ -1,0 +1,39 @@
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px 50px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.navText {
+  display: flex;
+  flex-direction: row;
+}
+
+.navImg {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.navImg img {
+  width: 30px;
+}
+
+.navImgs {
+  margin-right: 10px;
+}
+
+.navImgs:last-child {
+  margin-right: 0px;
+}
+
+
+.navi {
+  margin-right: 20px;
+}
