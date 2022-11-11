@@ -22,24 +22,59 @@
       <ul class="navImg">
         <li class="navImgs"><a href="#"><img src="images/cart.svg"><h2>Shop Now!</h2></a></li>
         <li class="navImgs"><a href="#"><img src="images/car.svg"></a><h2>Build & Price</h2></li>
-        <li class="navImgs"><a href="#"><img src="images/search.svg"><h2>Find your Car!</h2></a></li>
+        <li class="navImgs"><a href="#"><img src="images/search.svg"><h2>Find your Car</h2></a></li>
       </ul>
     </div>
   </header>
 
+  <div id="hero"></div>
+
+
   <main id="app">
-    <section id="line-up"></section>
+    <!-- <template>
+      <div id="mainslider">
+        <splide :options="options">
+          <splide-slide>
+            <img src="images/hero1.jpg" alt="main1">
+          </splide-slide>
+          <splide-slide>
+            <img src="images/hero2.jpg" alt="main2">
+          </splide-slide>
+          <splide-slide>
+            <img src="images/hero3.jpg" alt="main3">
+          </splide-slide>
+        </splide>
+      </div>
+    </template> -->
+
+    <nav id="car-nav">
+      <ul class="cars">
+        <thecarthumb @loadbdata="loadLightbox" v-for="car in carData" :car="car"></thecarthumb>
+      </ul>
+    </nav>
+
+
+
+
     <section id="features"></section>
     <section id="gallery"></section>
   </main>
 
   <footer id="footer">
-    
+    <div class="logoFooter">
+      <a href="#"><img src="images/logo2.png"></a>
+    </div>
+    <ul class="navText2">
+      <li class="navTexts2"><a href="#"><h2>LINE UP</h2></a></li>
+      <li class="navTexts2"><a href="#"><h2>FEATURES</h2></a></li>
+      <li class="navTexts2"><a href="#"><h2>GALLERY</h2></a></li>
+    </ul>
   </footer>
   
 
 
 
-  <script src="js/main.js" defer></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="js/main.js" type="module" defer></script>
 </body>
 </html>
