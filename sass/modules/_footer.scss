@@ -1,0 +1,24 @@
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  height: 80px;
+  padding: 20px 50px;
+}
+
+.logoFooter img {
+  width: 100px;
+}
+
+.navText2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 12px;
+}
+
+.navTexts2 h2 {
+  color: white;
+}

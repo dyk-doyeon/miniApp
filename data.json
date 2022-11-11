@@ -1,0 +1,34 @@
+{
+  "Cooper": {
+    "name": "Cooper",
+    "id": "cooper",
+    "biopic": "cooper.png",
+    "lbBG": "cooper_bg.jpg",
+    "description": "The Mini hardtop is sporty, quirky, and full of character, which is the three door type. The Cooper uses 3 Cylinder 12 Valve Twin Power Turbo. It has 134 hp @ 4,500-6,000 output (rpm) and 6-Speed Manual Transmission."
+  },
+
+  "CooperS": {
+    "name": "Cooper S",
+    "id": "coopers",
+    "biopic": "cooperS.png",
+    "lbBG": "cooperS_bg.jpg",
+    "description": "The Mini hardtop is sporty, quirky, and full of character, which is the three door type. The Cooper S uses 4 Cylinder 16 Valve Twin Power Turbo. It has 189 hp @ 5,000-6,000 output (rpm) and 6-Speed Manual Transmission."
+  },
+
+  "CooperWorks": {
+    "name": "John Cooper Works",
+    "id": "cooperworks",
+    "biopic": "cooperWorks.png",
+    "lbBG": "cooperWorks_bg.jpg",
+    "description": "The Mini hardtop is sporty, quirky, and full of character, which is the three door type. The John Cooper Works uses 4 Cylinder 16 Valve Twin Power Turbo. It has 228 hp @ 5,200-6,000 output (rpm) and 6-Speed Manual Transmission."
+  },
+
+  "CooperSE": {
+    "name":"Cooper SE",
+    "id":"cooperse",
+    "biopic": "CooperSE.png",
+    "lbBG":"cooperSE_bg.png",
+    "description": "The Mini hardtop is sporty, quirky, and full of character, which is the three door type. The Cooper SE uses a Fully Electric Motor. It has 181 hp @ 7,000 output (rpm) and Single Speed Automatic Transmission."
+  }
+
+}
