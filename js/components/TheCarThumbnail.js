@@ -1,27 +1,52 @@
 export default {
   name: "TheCarthumb",
 
-  emits: ['loadbdata'],
+  // emits: ['loadbdata'],
 
   props: {
     car: Object
   },
 
+
   template: 
   `
-  <li @click="loadBData">
-    <img :src='"images/"+ car.biopic' alt="cars image" style="width: 380px">
-    <!--<div class="sprite" id="cap"></div>-->
-    <div class="red-bumper"></div>
-    <h2>{{car.name}}</h2>
-  </li>
+  <section>
+    <li>
+      <div>
+        <div @click="show ^= true">
+          <img :src='"images/"+ car.biopic' alt="cars image" style="width: 380px">
+          <h2>{{ car.name }}</h2>
+        </div>
+
+        <div class="carBox" v-show="show">
+          <div>
+            <h2>Car Features</h2>
+            <img :src='"images/"+ car.biopic' alt="cars image" style="width: 380px">
+            <h3>{{ car.name }}</h3>
+            <p>{{ car.description }}</p>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!--v-if="show"-->
+  </section>
+
+
+  
   `,
 
-  methods: {
-    loadBData() {
-      //pass the individual object back to the main VM
-      this.$emit('loadbdata', this.car);
+  data() {
+    return {
+      show: false
     }
-  }
+  },
+
+  methods: {
+    // loadBData() {
+    //   this.$emit('loadbdata', this.car);
+    // }
+}
+
 
 }

@@ -1,0 +1,33 @@
+#features {
+  background-color: rgb(118, 63, 63);
+  color: white;
+}
+
+.carBox {
+  width: 100vw;
+  height: 500px;
+  padding: 50px;
+}
+
+.carBox h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.carBox h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.carBox p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.carBox img {
+  float: left;
+  
+}
+

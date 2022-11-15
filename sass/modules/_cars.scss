@@ -3,6 +3,13 @@
   text-align: center; 
 }
 
+.carText {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 60px 0px 40px 0px;
+  text-align: center;
+}
+
 .cars {
   display: flex;
   flex-direction: row;
@@ -11,11 +18,12 @@
 }
 
 .cars li { 
-  height: 280px;
+  height: 250px;
+  width: 400px;
   margin: 10px 8px;
   padding: 25px 0px;
   background-color: rgb(103, 53, 53);
-  overflow: hidden;
+  // overflow: hidden;
   cursor: pointer;
   opacity: 85%;
 }

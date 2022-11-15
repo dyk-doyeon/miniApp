@@ -1,7 +1,5 @@
 import TheCarthumb from "./components/TheCarThumbnail.js";
 
-// import Lightbox from "./components/TheLightbox.js";
-
 (() => {
   // create vue instance here
   const { createApp } = Vue
@@ -10,29 +8,28 @@ import TheCarthumb from "./components/TheCarThumbnail.js";
     created() {
     // get remote data
       fetch('./data.json')
-      .then(res => res.json())
-      .then(data => this.carData = data)
+        .then(res => res.json())
+        .then(data => this.carData = data)
       .catch(error => console.error(error));        
     },
 
   data() {
     return {
       carData: {},
-      loadBData: {},
-      // showLightBox:false
+      // loadBData: {},
+      show: false
     }
   },
 
   components: {
-    thecarthumb: TheCarthumb,
-    // lightbox: Lightbox
-  },
+    thecarthumb: TheCarthumb
+  }
 
   // methods: {
-  //   loadLightbox(hero) {
-  //     this.loadBData = hero;
-  //     this.showLightBox = true;
-  //   }
+  //   // toggleShow(car) {
+  //   //   this.loadBData = car;
+  //   //   this.show = !this.show;
+  //   // }
   // }
 
   }).mount('#app')
