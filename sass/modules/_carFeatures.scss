@@ -1,33 +1,50 @@
 #features {
-  background-color: rgb(118, 63, 63);
+  margin: 0;
+  background-color: black;
   color: white;
 }
 
-.carBox {
-  width: 100vw;
-  height: 500px;
-  padding: 50px;
-}
-
-.carBox h2 {
-  font-weight: 600;
-  font-size: 30px;
-  margin-bottom: 30px;
+.imgClose {
   text-align: center;
 }
 
-.carBox h3 {
+.imgClose img {
+  width: 40px;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.imgClose h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 10px 0 80px;
+}
+
+.lightbox_close {
+  width: 50px;
+  text-align: center;
+}
+
+.carBox {
+  display: flex;
+  padding: 20px;
+}
+
+.imgBox img {
+  width: 500px;
+  margin-right: 60px;
+}
+
+.desBox h2 {
   font-weight: 500;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
-.carBox p {
-  font-weight: 400;
-  font-size: 15px;
-}
-
-.carBox img {
-  float: left;
-  
+.desBox p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  padding-right: 15px;
 }
 

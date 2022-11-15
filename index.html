@@ -48,24 +48,19 @@
     </template> -->
 
     <nav id="car-nav">
-      <h2 class="carText">THE MINI LINEUP</h2>
-
+      <div class="lineText"> 
+        <h2 class="carText">THE MINI LINEUP</h2>
+      </div>
       <ul class="cars">
-        <thecarthumb v-for="car in carData" :car="car"></thecarthumb>
+        <thecarthumb @loadbdata="loadShowBox" v-for="car in carData" :car="car"></thecarthumb>
       </ul>
     </nav>
-    
+
     <section id="features">
-      <!-- <thecarfeatures v-if="show" :car="loadBData">
-        <div class="featureText">
-          <div class="carFeImg"><img :src='"images/" + car.biopic' alt="'car.name'"></div>
-          <div class="carFeText">
-            <h3>{{ car.name }}</h3>
-            <p>{{ car.description }}</p>
-          </div>
-        </div>
-      </thecarfeatures> -->
+      <showBox @closelb="this.show = false" v-if="show" :car="loadBData"></showBox>
     </section>
+
+
 
     <section id="gallery"></section>
   </main>
