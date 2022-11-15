@@ -3,11 +3,10 @@
   text-align: center; 
 }
 
-.carText {
+.lineText h2 {
   font-weight: 600;
   font-size: 30px;
-  margin: 60px 0px 40px 0px;
-  text-align: center;
+  margin: 60px 0 40px 0px;
 }
 
 .cars {
@@ -15,32 +14,31 @@
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+  margin: 10px;
 }
 
 .cars li { 
-  height: 250px;
-  width: 400px;
+  height: 280px;
   margin: 10px 8px;
   padding: 25px 0px;
-  background-color: rgb(103, 53, 53);
-  // overflow: hidden;
+  background-color: white;
+  overflow: hidden;
   cursor: pointer;
-  opacity: 85%;
+  opacity: 80%;
 }
 
 .cars li:hover {
   opacity: 100%;
+  transform: scale(1.1);
 
   transition: 0.4s ease-in-out
 }
 
 .cars li h2 {
   padding: 35px 0px; 
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 20px;
 }
 
-.characters li a {
-  text-decoration: none;
-}
+
