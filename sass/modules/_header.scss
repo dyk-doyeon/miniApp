@@ -58,9 +58,15 @@
 
 #hero {
   background-color: black; 
-  height: 650px;
-  background-image: url("../images/hero3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  height: 808px;
+  // background-image: url("../images/hero3.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center center;
+}
+
+#hero video {
+  width: 100vw;
+  margin-bottom: 20px;
+  opacity: 80%;
 }

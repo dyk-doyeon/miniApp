@@ -24,7 +24,7 @@ export default {
 
     methods: {
       closeLB() {
-        this.$emit('closeLB');
+        this.$emit('closelb');
       }
   }
 }
