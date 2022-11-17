@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
+
   <title>Welcome to Mini</title>
 </head>
 <body>
@@ -27,26 +28,14 @@
     </div>
   </header>
 
-  <div id="hero"></div>
+  <div id="hero">
+    <video poster="https://86bd04aee645f41c2005-510904abdc95bfe9a6b152d3edc0036b.ssl.cf5.rackcdn.com/Public/img/2016-739165/content/electric/fast-facts-poster.jpg?v=NwY8tz2G0hI8N6iLlo2v8m4NZBYEb6Dj3jJYlFRgPBM1" muted autoplay loop class="full-height-img" playsinline>
+      <source src="https://86bd04aee645f41c2005-510904abdc95bfe9a6b152d3edc0036b.ssl.cf5.rackcdn.com/Public/img/2016-739165/content/electric/fast-facts.mp4?v=NwY8tz2G0hI8N6iLlo2v8m4NZBYEb6Dj3jJYlFRgPBM1" />
+    </video>
+  </div>
 
 
   <main id="app">
-    <!-- <template>
-      <div id="mainslider">
-        <splide :options="options">
-          <splide-slide>
-            <img src="images/hero1.jpg" alt="main1">
-          </splide-slide>
-          <splide-slide>
-            <img src="images/hero2.jpg" alt="main2">
-          </splide-slide>
-          <splide-slide>
-            <img src="images/hero3.jpg" alt="main3">
-          </splide-slide>
-        </splide>
-      </div>
-    </template> -->
-
     <nav id="car-nav">
       <div class="lineText"> 
         <h2 class="carText">THE MINI LINEUP</h2>
@@ -57,12 +46,31 @@
     </nav>
 
     <section id="features">
-      <showBox @closelb="this.show = false" v-if="show" :car="loadBData"></showBox>
+      <showbox @closelb="this.show = false" v-if="show" :car="loadBData"></showbox>
     </section>
 
 
-
-    <section id="gallery"></section>
+    <section id="gallery">
+      <h2 class="carText">THE MINI GALLERY</h2>
+      <div class="slideContainer">
+        <div class="slides fade">
+          <img src="images/slideImg1.png" style="width:100%">
+        </div>
+        <div class="slides fade">
+          <img src="images/slideImg2.png" style="width:100%">
+        </div>
+        <div class="slides fade">
+          <img src="images/slideImg3.png" style="width:100%">
+        </div>
+      </div>
+      <div class="dotContainer">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </section>
+  
+  
   </main>
 
   <footer id="footer">
@@ -75,9 +83,6 @@
       <li class="navTexts2"><a href="#"><h2>GALLERY</h2></a></li>
     </ul>
   </footer>
-  
-
-
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="js/main.js" type="module" defer></script>

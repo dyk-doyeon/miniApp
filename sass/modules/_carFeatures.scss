@@ -23,16 +23,22 @@
 .lightbox_close {
   width: 50px;
   text-align: center;
+  cursor: pointer;
 }
 
 .carBox {
   display: flex;
   padding: 20px;
+  justify-content: space-around;
 }
 
 .imgBox img {
-  width: 500px;
+  width: 600px;
   margin-right: 60px;
+}
+
+.desBox {
+  width: 600px;
 }
 
 .desBox h2 {
