@@ -33,7 +33,7 @@ import Showbox from "./components/TheShowBox.js";
   createApp({
     created() {
     // get remote data
-      fetch('./data.json')
+      fetch('./scripts/json.php')
       .then(res => res.json())
       .then(data => this.carData = data)
       .catch(error => console.error(error));        
