@@ -58,7 +58,7 @@
 
 #hero {
   background-color: black; 
-  height: 808px;
+  max-height: 808px;
   // background-image: url("../images/hero3.jpg");
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -67,6 +67,7 @@
 
 #hero video {
   width: 100vw;
+  max-height: 808px;
   margin-bottom: 20px;
   opacity: 80%;
 }
