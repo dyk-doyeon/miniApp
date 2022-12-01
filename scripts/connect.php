@@ -3,12 +3,12 @@
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
 
-    $user = "root";
-    $pass = "root"; 
+    $user = "dostggnn_doyoenk";
+    $pass = "lemonqu2329*"; 
     $url = "localhost";
-    $db = "db_miniapp";
+    $db = "dostggnn_database";
 
-    $link = mysqli_connect($url, $user, $pass, $db, "8888");
+    $link = mysqli_connect($url, $user, $pass, $db, "3306");
 
     if(!$link) {
       error_log("Connection error: " . mysqli_connect_error());
